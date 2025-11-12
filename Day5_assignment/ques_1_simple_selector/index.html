@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Beblog Navbar</title>
+
+<style>
+    *{ 
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body{  
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        background-color: black;
+        color: white;
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        height: 70px;
+
+    }
+    .brand{
+      font-weight: bold;
+        font-size: 2.0em;
+        margin-left: 100px;
+    }
+    .brand .blue{
+        color: #2fa8ff;
+    }
+    .brand .grey{
+        color: white;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin: 100px;
+        padding: 0;
+        gap: 30px;
+        font-size: 15px;
+    }
+    .nav-list:hover{
+        color: #2fa8ff;
+    }
+  
+    .nav-link{
+        color: white;
+        text-decoration: none;
+        font-size: 1.8em;
+        border-radius: 0 4px;
+        transition: color 0.3s, background-color 0.3s;
+        padding: 0 4px;
+    }
+  .nav-list li:first-child .nav-link{
+        font-weight: bold;
+    }
+
+    .nav-list:hover{
+        color: #2fa8ff;
+       
+    }
+  .nav-list li:last-child .nav-link{
+        font-weight: bold;
+        color: #2fa8ff;
+    }
+    #header, #footer{
+        margin: 0;
+        padding: 10;
+    }
+</style>
+</head> 
+<body>
+    <div id="header">
+        <span class="brand"><span class="blue">Be</span><span class="grey">blog</span></span>   
+<ul class="nav-list">
+    <li><a href="#" class="nav-link">Home</a></li>
+    <li><a href="#" class="nav-link" >Web Design</a></li>              
+    <li><a href="#" class="nav-link">WordPress</a></li>   
+    <li><a href="#" class="nav-link">About us</a></li>
+    <li><a href="#" class="nav-link">Beadvice</a></li>
+    <li><a href="#" class="nav-link">Buy BeTheme</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+
