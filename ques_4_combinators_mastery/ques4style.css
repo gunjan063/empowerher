@@ -1,0 +1,23 @@
+main p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+}
+nav ul >li{
+    display: inline;
+    margin-right: 16px;
+    border-bottom: 2px solid #0077ff;
+}
+h2, h3{
+    color:brown;
+    font-size: 24px;
+}
+article, p{
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 8px;
+}
+ul li{
+    margin-bottom: 10px;
+    color: darkkhaki
+}
