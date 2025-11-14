@@ -15,3 +15,9 @@ function isprime(num) {
     }
 }
 console.log(isprime(num));
+
+function evenOdd(num) {
+    return num % 2 === 0;
+}
+
+console.log(evenOdd(4))
