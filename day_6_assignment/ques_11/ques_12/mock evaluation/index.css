@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.top-section .top-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+.cardspace{
+   color: white;
+   text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+.cardspace img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.cardspace button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mid-section .mid-grid{
+    display: grid;
+    gap:12px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+.menu-card{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+.menu-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.bottom-section .bottom-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.offers .h3{
+    ;
+}
