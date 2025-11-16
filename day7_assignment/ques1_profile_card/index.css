@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    background-color: beige;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 04px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.myprofile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
+.card h2{
+    text-align: center;
+    color: darkblue;
+   margin: 10px 0 5px 0;
+}
+.card p{
+    text-align: center;
+    color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
