@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    background: white;
+    justify-content: center;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 300px);
+   gap: 5px;
+   text-align: center;
+     
+  
+
+}
+.grid-item{
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+.item1 {background-color: orangered;}
+.item2 {background-color: rgb(58, 58, 232);}
+.item3 {background-color: rgb(99, 99, 23);}
+.item4 {background-color: rgb(162, 132, 218)}
+.item5 {background-color: rgb(127, 196, 23);}
+.item6 {background-color: rgb(101, 205, 247);}
+.item7 {background-color:  rgb(195, 119, 91);}
+.item8 {background-color: rgb(38, 127, 159);}
+.item9 {background-color: rgb(65, 10, 10);}
