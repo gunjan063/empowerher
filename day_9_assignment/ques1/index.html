@@ -4,80 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
- <link rel="stylesheet" href="index.css">
-
-
-    
+    <style>
+      .cards-container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+       gap: 20px;
+      }
+      .card{
+        background: whitesmoke;
+        border-radius: 10px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.07);
+        padding:20px;
+      }
+      .card-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .card-title{
+        font-weight: 600;
+        color: black;
+      }
+      .card-price{
+         font-weight: 600;
+        color: #c49a6c;
+      }
+      .card-desc{
+        font-size: 14px;
+        color: #666;
+      }
+      @media(max-width: 800px){
+        .cards-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+      }
+         @media(max-width: 500px){
+        .cards-container{
+            grid-template-columns: 1fr;
+        }
+      }
+    </style>
 </head>
 <body>
-    
-    <div class="investors-grid">
-        <div class="card">
-            <img src="./Vijay_Shekhar_Sharma_Paytm_96f52579b8.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Vijay Shekhar Sharma</h3>
-              <p> Founder & CEO</p>
-              <img class="logo" src="./download.png" alt="company-logo">
-
-            </div>   
+    <div class="cards-container">
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Cappuccino</span>
+            <span class="card-price">$49</span>
+        
         </div>
-         <div class="card">
-            <img src="./Rectangle_427_637d69bb57.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Kunal Shah</h3>
-              <p> Founder</p>
-              <img class="logo" src="./download (1).png" alt="company-logo">
-            </div>
-           </div>
-     <div class="card">
-            <img src="./amrish_rau_pine_labs_144e5e587c.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Amrish Rau</h3>
-              <p> CEO</p>
-              <img class="logo" src="./download (2).png" alt="company-logo">
-            </div>
-           </div>
-            <div class="card">
-            <img src="./Sampad_swain_Instamojo_f12bf6341e.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Sawpad Swain</h3>
-              <p> Co-Founder &CEO</p>
-              <img class="logo" src="./download.jpg" alt="company-logo">
-            </div>
-           </div>
-            <div class="card">
-            <img src="./Ankush_Sachdeva_Sharechat_4e44dbbe6b.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Ankush Sachdeva</h3>
-              <p> Co-Founder & CeO</p>
-              <img class="logo" src="./sharechat.png" alt="company-logo">
-            </div>
-           </div>
-            <div class="card">
-            <img src="./bhanu_pratap_singh_sharechat_11fdd7b47a.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Bhanu Pratap Singh</h3>
-              <p> Co-Founder & CTO</p>
-              <img class="logo" src="./sharechat.png" alt="company-logo">
-            </div>
-           </div>
-            <div class="card">
-            <img src="./farid_ahsan_sharechat_1251f28141.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Farid Ahsan</h3>
-              <p> Co-Founder & COO</p>
-              <img class="logo" src="./sharechat.png" alt="company-logo">
-            </div>
-           </div>
-            <div class="card">
-            <img src="./Amit_Kumar_Agarwal_Nobroker_a8a279ad91.png" alt="inverstor-image">
-            <div class="info">
-              <h3>Amit Kumar Agarwal</h3>
-              <p> Founder & CEO</p>
-              <img class="logo" src="./nobreaker.png" alt="company-logo">
-            </div>
-           </div>
-           </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Americano</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Escpresso</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Mocha</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Coffee latte</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Mocha</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Ristretto</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Affogato</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        <div class="card">
+        <div class="card-header">
+            <span class="card-title">Cappuccino</span>
+            <span class="card-price">$49</span>
+        </div>
+        <div class="card-desc">usage of internet is becoming more common due to rapid advance</div></div>
+        
+    </div>
+    
 </body>
 </html>
