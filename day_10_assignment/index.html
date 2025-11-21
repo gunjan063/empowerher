@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunjan | Portfolio</title>
+    <link rel="stylesheet" href="./ques_1_ai_tools/index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Gunjan</div>
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Hi, I'm Gunjan</h1>
+        <p>A passionate learner building beautiful and responsive web experiences.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">UI/UX Basics</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Connect with me:</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p class="copy">© 2025 Gunjan. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Mobile navigation toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
