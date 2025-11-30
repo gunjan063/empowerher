@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">welcome</h1>
+    <p>This is para one</p>
+    <p>This is para two</p>
+    <p>This is para three</p>
+      <div class="container">
+        This is a container div.
+    </div>
+</body>
+<script>
+    const heading=document.getElementById("head");
+    heading.textContent="Welcome to the DOM World";
+
+    const paragraphs=document.getElementsByTagName("p");
+    Array.from(paragraphs)
+    .forEach(p => {
+        p.style.color="blue";
+
+        const contdiv=document.querySelector(".container");
+        contdiv.style.background="yellow";
+    });
+</script>
+</html>
