@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let seconds = Number(prompt("Enter number of seconds to count down:"));
+
+let timerId;
+let stop = false;
+
+function startCountdown() {
+  timerId = setInterval(() => {
+    if (stop) {
+      clearInterval(timerId);
+      console.log("Countdown stopped manually!");
+      return;
+    }
+
+    console.log("Remaining:", seconds);
+    seconds--;
+
+    if (seconds < 0) {
+      clearInterval(timerId);
+      console.log("Countdown Complete!");
+    }
+  }, 1000);
+}
+
+// Check user key press using setTimeout repeatedly
+function checkStopKey() {
+  setTimeout(() => {
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "s" || event.key === "S") {
+        stop = true;
+      }
+    });
+  }, 500); // delay key listener
+}
+
+startCountdown();
+checkStopKey();
+</script>
+
+</body>
+</html>
