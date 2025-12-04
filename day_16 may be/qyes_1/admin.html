@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Book management app</h1>
+    <div> 
+        <button onclick=""gohome()>Back to home page</button>
+        
+    </div>
+
+<div>
+    <h3>add book</h3>
+    <input type="text" id="title" placeholder="enter text">
+    <input type="text" id="author" placeholder="enter author">
+
+    <select id="category">
+        <option value="all">all</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Technical">Technical</option>
+    </select>
+    <button>addbook</button>
+</div>
+
+<div></div>
+<div></div>
+<div id="bookscontainer"></div>
+</body>
+
+<script>
+ let books = []
+const imageUrl = "https://m.media-amazon.com/images/I/71ZB18P3inL._SY522_.jpg"
+    function addbook(){
+      let title = document.getElementById("title").value;
+     let author = document.getElementById("author").value;
+    let category = document.getElementById("category").value;
+
+    let book = { 
+        title,
+        author,
+        category,
+        imageUrl,
+ } 
+ books.push(book);
+ renderbooks(books)
+  }
+
+  function renderbooks(booklist){
+  let container= document.getElementById("bookscontainer");
+  container.innerHTML = "";
+
+  booklist.forEach((book, index) => {
+     let card=document.createElement("div");
+     card.classname = "card";
+
+     let image=document.createElement("img");
+     img.src = book.imageUrl;
+
+     let title = document.createElement("h3");
+    title.textContent = book.title;
+
+      let author = document.createElement("p");
+    author.textContent = book.author;
+
+      let category = document.createElement("p");
+    category.textContent = book.category;
+
+    DeleteBtn.addEventListener("click", function () {
+        deletebook(index);
+    });
+
+    card.appendChild(img);
+     card.appendChild(title);
+      card.appendChild(author);
+       card.appendChild(category);
+
+   container.appendChild(card);
+     
+
+ 
+    })
+
+  }
+</script>
+</html>
